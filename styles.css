@@ -11,7 +11,7 @@
 	color:rgb(255, 255, 255);
 }
 #dsa {
-	background-color: rgb(137, 0, 35)';
+	background-color: rgb(137, 0, 35);
 	flex-basis:50%;
 	align-self:center;
 }
@@ -23,6 +23,7 @@
 #acciojob {
 	background-color: rgb(98, 110, 227);
 	order:1;
+	justify-content:center;
 	flex-basis:75%;
 }
 #buisness-analytics {
