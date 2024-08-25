@@ -4,13 +4,16 @@
 	justify-content:space-between;
     row-gap: 24px;
 }
+.product{
+	display:flex;
+	align-items:center;
+	height:50px;
+	color:rgb(255, 255, 255);
+}
 #dsa {
-    grid-row: 1;
-    grid-column: 1 / 2; /* First column of the first row */
-    width: 50%; /* 50% of the container width */
-    align-self: center; /* Vertically center within the row */
-	background-color: violet;
-	padding:20px;
+	background-color: rgb(137, 0, 35)';
+	flex-basis:50%;
+	align-self:center;
 }
 #mern {
 	background-color: rgb(243, 127, 27);
@@ -31,6 +34,7 @@
 }
 
 #spring {
+	order:3;
     margin-left: 10px;
     height: 75px; 
 	background-color: pink;
