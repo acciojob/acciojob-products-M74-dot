@@ -1,1 +1,49 @@
-/*  your css code here. If applicable */
+#wrapper {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Defines three rows */
+    row-gap: 24px; /* Vertical spacing between rows */
+    grid-template-columns: 1fr; /* Single column grid */
+}
+#dsa {
+    grid-row: 1;
+    grid-column: 1 / 2; /* First column of the first row */
+    width: 50%; /* 50% of the container width */
+    align-self: center; /* Vertically center within the row */
+	background-color: violet;
+}
+#mern {
+    grid-row: 1;
+    grid-column: 1 / 2; /* First column of the first row */
+    width: 30%; /* 30% of the container width */
+    height: 75px; /* Set height */
+    margin-left: auto; /* Pushes MERN to the right */
+	background-color: orange;
+}
+#acciojob {
+    grid-row: 2;
+    grid-column: 1 / 2; /* Full width of the grid */
+    width: 75%; /* 75% of the container width */
+    justify-self: center; /* Horizontally center */
+	background-color: skyblue;
+}
+#buisness-analytics {
+    grid-row: 3;
+    grid-column: 1 / 2; /* First column of the third row */
+    width: 40%; /* 40% of the container width */
+    align-self: end; /* Align to the bottom */
+	background-color: green;
+}
+
+#spring {
+    grid-row: 3;
+    grid-column: 1 / 2; /* First column of the third row */
+    margin-left: 10px; /* Space between BunisessAnalytics and Spring */
+    flex: 1; /* Take up the remaining horizontal space */
+    height: 75px; /* Set height */
+	background-color: pink;
+}
+
+/* Ensuring proper grid item sizing */
+#wrapper > .product {
+    display: block; /* Ensure products behave as block elements within grid */
+}
